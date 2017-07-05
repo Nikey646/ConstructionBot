@@ -129,6 +129,7 @@ KuroBot.MiscCommands.FunModule:
       Name: Add Rip Link
       Command: rip add
       Summary: Adds a link to the list that the rip command uses
+      MinimumPermission: BotOwner
       Arguments:
       - Summary: The link to add. May contain vanity text
     InspiteAsync:
