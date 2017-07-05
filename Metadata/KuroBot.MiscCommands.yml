@@ -1,0 +1,139 @@
+KuroBot.MiscCommands.ConversionsModule:
+  Commands:
+    KilometersToMilesAsync:
+      Name: Kilometer To Miles
+      Command: kilometerstomiles
+      Summary: Converts Kilometers to Miles...what else did you expect?
+      Aliases:
+      - km2mi
+      - kilometers2miles
+      Arguments:
+      - Summary: How many Kilometers, you derp
+    MilesToKilometersAsync:
+      Name: Miles to Kilometeres
+      Command: milestokilometers
+      Summary: Converts miles to kilometers...what else did you expect
+      Aliases:
+      - mi2km
+      - miles2kilometers
+      Arguments:
+      - Summary: How many miles, you derp
+    CelsiusToFahrenheitAsync:
+      Name: Calsius To Fahrenheit
+      Command: celsiustofahrenheit
+      Summary: Converts celsius to fahrenheit...what else did you expect
+      Aliases:
+      - c2f
+      - celsius2fahrenheit
+      Arguments:
+      - Summary: How many celsius, you derp
+    FahrenheitToCelsiusAsync:
+      Name: Fahrenheit To Celsius
+      Command: fahrenheittocelsius
+      Summary: Converts fahrenheit to celsius...what else did you expect
+      Aliases:
+      - f2c
+      - fahrenheit2celsius
+      Arguments:
+      - Summary: How many fahrenheit, you derp
+    GramsToOuncesAsync:
+      Name: Grams to Ounces
+      Command: gramstoounces
+      Summary: Converts grams to ounces...what else did you expect
+      Aliases:
+      - g2oz
+      - grams2ounces
+      Arguments:
+      - Summary: How many grams, you derp
+    OuncesToGramsAsync:
+      Name: Ounces to Grams
+      Command: ouncestograms
+      Summary: Converts ounces to grams...what else did you expect
+      Aliases:
+      - oz2g
+      - ounces2grams
+      Arguments:
+      - Summary: How many ounces, you derp
+    PoundsToKilogramsAsync:
+      Name: Pounds To Kilograms
+      Command: poundstokilograms
+      Summary: Converts pounds to kilograms...what else did you expect
+      Aliases:
+      - lb2kg
+      - pounds2kilograms
+      Arguments:
+      - Summary: How many Pounds, you derp
+    KilogramsToPoundsAsync:
+      Name: Kilograms To Pounds
+      Command: kilogramstopounds
+      Summary: Converts kilograms to pounds...what else did you expect
+      Aliases:
+      - kg2lb
+      - kilograms2pounds
+      Arguments:
+      - Summary: How many Kilograms, you derp
+KuroBot.MiscCommands.FunModule:
+  Commands:
+    DisplayInfoAsync:
+      Command: info
+      Aliases:
+      - status
+    DogsAsync:
+      Name: Dogs!
+      Command: dogs
+      Summary: Summons a dog
+      Aliases:
+      - dog
+    CatsAsync:
+      Name: Cats!
+      Command: cats
+      Summary: Summons a random cat
+      Aliases:
+      - cat
+    AvatarsAsync:
+      Name: Display Avatar
+      Command: avatars
+      Summary: Displays the provided users avatar
+      Aliases:
+      - avatar
+      Arguments:
+      - Summary: The users whose avatars should be displayed
+    DisplayInviteGuildAsync:
+      Name: Display Guild Invites
+      Command: invite guild
+      Summary: Displays a normal and temproary non-expiring invite for the current server
+      Context: Guild
+    DisplayInviteBotAsync:
+      Name: Display Bot Invite
+      Command: invite bot
+      Summary: Displays the link to invite the bot to your server
+      MinimumPermission: BotDeveloper
+    AvatarAsync:
+      Name: Update Bot Avatar
+      Command: avatar
+      Summary: Updates the bots avatar with the attached image
+      AliasType: Absolute
+      Context: Guild
+      MinimumPermission: BotOwner
+      Priority: 2
+    RipAsync:
+      Name: Rip
+      Command: rip
+      Summary: Displays a random video of factorio death and destruction
+    AnnoyZirr:
+      Name: Annoy Zirr
+      Command: annoyzirr
+      Summary: This is the bestest command ever! You should totes use it!
+      Context: Guild
+    AddRipAsync:
+      Name: Add Rip Link
+      Command: rip add
+      Summary: Adds a link to the list that the rip command uses
+      Arguments:
+      - Summary: The link to add. May contain vanity text
+    InspiteAsync:
+      Name: Random Inspirational Image?
+      Command: Inspire
+      Summary: Displays a random inspiration image
+    HeresyAsync:
+      Command: heresy

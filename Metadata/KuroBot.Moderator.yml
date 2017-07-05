@@ -1,0 +1,30 @@
+KuroBot.Moderator.MutedModule:
+  Commands:
+    ToggleMutedRoleAsync:
+      Name: Toggle Mute Role
+      Command: config toggle mute
+      Summary: Toggles the provided role to be a muted role
+      Aliases:
+      - config toggle muted
+      Context: Guild
+      MinimumPermission: Administrator
+      Arguments:
+      - Summary: The role to be set as a muted role
+      Priority: 2
+    UnMuteUserAsync:
+      Name: Unmute User
+      Command: unmute
+      Summary: Unmutes a user
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The user to unmute
+    MuteUserAsync:
+      Name: Mute User
+      Command: mute
+      Summary: Mutes a user
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The user to mute
+      - Summary: How long the mute will last for (#hr#m#s)

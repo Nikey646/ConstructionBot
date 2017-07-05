@@ -1,0 +1,65 @@
+KuroBot.Tags.TagsModule:
+  Group: tags
+  Aliases:
+  - tag
+  Commands:
+    CreateTagAsync:
+      Name: Create a Tag
+      Command: create
+      Summary: Adds a new tag to the collection of tags
+      Aliases:
+      - add
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The name of the tag
+      - Summary: The contents of the tag. May only be empty if a screenshot is attached to the message
+      Priority: 2
+    DisplayTagAsync:
+      Name: Display a Tag
+      Summary: Displays a tag
+      Remarks: Bilkas 2nd favourite command (presumably)
+      Aliases:
+      - display
+      Context: Guild
+      Arguments:
+      - Summary: The tag to display, you derpenstein
+      Priority: 1
+    ModifyTagAsync:
+      Name: Edit a Tag
+      Command: modify
+      Summary: Modifies the contents of the tag
+      Aliases:
+      - edit
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The tag to modify
+      - Summary: The new contents of the tag. May only be empty if a screenshot is attached to the message
+      Priority: 2
+    RemoveTagAsync:
+      Name: Remove a Tag
+      Command: delete
+      Summary: Deletes a tag
+      Remarks: Doesn't actually delete a tag
+      Aliases:
+      - remove
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The name of the tag to delete
+      Priority: 2
+    DisplayStatsAsync:
+      Name: Display Tag Stats
+      Command: stats
+      Summary: Displays the Top 6 used tags and Bottom 6 used tags
+      Remarks: Bilkas favourite command~
+      Aliases:
+      - stat
+      MinimumPermission: Moderator
+      Priority: 2
+    DisplayAllTagsAsync:
+      Name: Display All Tags
+      Summary: Displays all available tags
+      Remarks: This rapes the database
+      Priority: 2

@@ -1,0 +1,113 @@
+KuroBot.GuildConfig.GuildConfigModule:
+  Name: Guild Config
+  Group: config
+  Commands:
+    GetPrefixAsync:
+      Name: Gets Prefix
+      Command: prefix
+      Summary: Displays the current guilds prefix for the bot
+      Context: Guild
+    SetPrefixAsync:
+      Name: Set Prefix
+      Command: prefix
+      Summary: Sets the prefix for the current guild
+      Context: Guild
+      MinimumPermission: Administrator
+      Arguments:
+      - Summary: The new prefix
+    ToggleUserAccessAsync:
+      Name: Toggle User Access
+      Command: toggle user
+      Summary: Toggles the user access to the bots commands
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The user to toggle access for
+    ToggleGreetingsAsync:
+      Name: Toggle Greetings Channel
+      Command: toggle greeting
+      Summary: Toggles whether or not greetings will be displayed
+      Aliases:
+      - toggle greetings
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The channels to display greetings in
+    SetGreetingAsync:
+      Name: Set Greeting
+      Command: greeting
+      Summary: Sets the greeting that will be displayed when the user joins
+      Context: Guild
+      MinimumPermission: Administrator
+      Arguments:
+      - Summary: The text to be displayed. {0} will be a mention of the user, while {1} will be the current guild.
+    ToggleFarewellsAsync:
+      Name: Toggle Farewell Channel
+      Command: toggle farewell
+      Summary: Toggles whether or not farewell will be displayed
+      Aliases:
+      - toggle farewells
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The channels to display farewells in
+    SetFarewellAsync:
+      Name: Set Farewell
+      Command: farewell
+      Summary: Sets the farewell that will be displayed when the user joins
+      Context: Guild
+      MinimumPermission: Administrator
+      Arguments:
+      - Summary: The text to be displayed. {0} will be a mention of the user, while {1} will be the current guild.
+    TogglePervertRoleAsync:
+      Name: Toggle Pervert Role
+      Command: toggle pervert
+      Summary: Toggles the provided role to be classified as a pervert
+      Context: Guild
+      MinimumPermission: Administrator
+      Arguments:
+      - Summary: The role to toggle 'perverted' status on
+      Priority: 2
+    ToggleAdminRoleAsync:
+      Name: Toggle Admin Role
+      Command: toggle administraor
+      Summary: Toggles the provided role to be classified as an admin
+      Aliases:
+      - toggle admin
+      Context: Guild
+      MinimumPermission: GuildOwner
+      Arguments:
+      - Summary: The role to toggle adminship on
+      Priority: 2
+    ToggleModeratorRoleAsync:
+      Name: Toggle Moderator Role
+      Command: toggle moderator
+      Summary: Toggles the provided role to be classified as an moderator
+      Aliases:
+      - toggle mod
+      Context: Guild
+      MinimumPermission: GuildOwner
+      Arguments:
+      - Summary: The role to toggle moderator on
+      Priority: 2
+    ToggleGreetingsEnabledAsync:
+      Name: Toggle Greetings
+      Command: toggle greeting
+      Summary: Enables or disables the displaying of greeting messages
+      Aliases:
+      - toggle greetings
+    ToggleFarewellsEnabledAsync:
+      Name: Toggle Farewells
+      Command: toggle farewell
+      Summary: Enables ot disables the displaying of Farewell messages
+      Aliases:
+      - toggle farewells
+    ToggleRoleAsync:
+      Name: Toggle Role
+      Command: toggle
+      Summary: Toggles the provided role to be classified as the provided role type
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The role of role the provided role should be assigned
+      - Summary: The role to become the type

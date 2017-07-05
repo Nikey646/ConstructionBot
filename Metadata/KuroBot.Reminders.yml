@@ -1,0 +1,13 @@
+KuroBot.Reminders.ReminderModule:
+  Group: Reminder
+  Commands:
+    CreateReminderAsync:
+      Name: Create a Reminder
+      Command: create
+      Summary: Creates a reminder to remind you about something at a later point in time
+      Aliases:
+      - add
+      - create
+      Arguments:
+      - Summary: 'How long until you should be reminded (Format: #hr#m#s)'
+      - Summary: What should you be reminded of

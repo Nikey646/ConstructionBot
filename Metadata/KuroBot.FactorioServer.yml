@@ -1,0 +1,9 @@
+KuroBot.FactorioServer.Streamer.StreamerModule:
+  Commands:
+    ToggleRoleAsync:
+      Name: Configure Streamer Role
+      Command: config toggle streamer
+      Summary: Configures the provided role to be classified as a streamer role
+      Arguments:
+      - Summary: The role to classify as streamer
+      Priority: 2

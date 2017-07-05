@@ -1,0 +1,27 @@
+KuroBot.Anilist.AnilistModule:
+  Name: Anilist
+  Group: anilist
+  Summary: Search Anilist for Anime/Hentai/Manga
+  Commands:
+    SearchAnimeAsync:
+      Name: Anime Search
+      Command: anime
+      Summary: Search anilist for anime and/or hentai
+      Aliases:
+      - a
+      - anime search
+      - search anime
+      Context: Guild, DM
+      Arguments:
+      - Summary: What to search anilist for
+    SearchMangaAsync:
+      Name: Manga Search
+      Command: manga
+      Summary: Searches for manga on Anilist
+      Aliases:
+      - m
+      - manga search
+      - search manga
+      Context: Guild, DM
+      Arguments:
+      - Summary: What to search anilist for

@@ -1,0 +1,46 @@
+KuroBot.ModLog.ModLogModule:
+  Group: logging
+  Aliases:
+  - logs
+  - log
+  Commands:
+    ToggleChannel:
+      Name: Toggle Logging Channel
+      Command: toggle
+      Summary: Toggles the channel which users edits and deletes will be logged to
+      MinimumPermission: Administrator
+      Arguments:
+      - Summary: The channel to toggle logging in
+    PruneAsync:
+      Name: Prune
+      Command: prune
+      Summary: Prunes the last count messages
+      Aliases:
+      - prune
+      AliasType: Absolute
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: How many messages to prune
+      Priority: 2
+    PruneUserAsync:
+      Name: Prune
+      Command: prune
+      Summary: Prunes only a users last few messages (within the last 500 messages)
+      Aliases:
+      - prune
+      AliasType: Absolute
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The user whose messages shalle be pruned
+      - Summary: How many of that users messages should be pruned
+      Priority: 1
+    NukeAsync:
+      Name: Nuke
+      Command: nuke
+      Summary: Nukes every message from the provided one to the current message
+      Aliases:
+      - nuke
+      AliasType: Absolute
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The Id of the message which to start nuking from
