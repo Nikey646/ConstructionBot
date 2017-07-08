@@ -123,6 +123,9 @@ KuroBot.MiscCommands.FunModule:
     AnnoyZirr:
       Name: Annoy Zirr
       Command: annoyzirr
+      Aliases:
+      - memes
+      - meme
       Summary: This is the bestest command ever! You should totes use it!
       Context: Guild
     AddRipAsync:
