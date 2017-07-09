@@ -7,3 +7,29 @@ KuroBot.FactorioServer.Streamer.StreamerModule:
       Arguments:
       - Summary: The role to classify as streamer
       Priority: 2
+KuroBot.FactorioServer.FactorioBlueprint.FactorioBlueprintsModule:
+  Name: /r/FactorioBlueprints
+  Group: blueprint
+  Aliases:
+  - blueprints
+  Commands:
+    SearchAsync:
+      Name: Search Flair
+      Summary: Searches /r/FactorioBlueprints for a blueprint matching the query
+      Context: Guild, DM
+      Arguments:
+      - Summary: The query to search for
+    FlairSearchAsync:
+      Name: Flair Search
+      Summary: Searches /r/FactorioBlueprints for a blueprint matching the flair and query
+      Context: Guild, DM
+      Arguments:
+      - Summary: The flair from /r/FactorioBlueprints to search for
+      - Summary: The query to search for
+    FlairAsync:
+      Name: Flair
+      Summary: Searches /r/FactorioBlueprints for a blueprint matching the flair
+      Context: Guild, DM
+      Arguments:
+      - Summary: The flair from /r/FactorioBlueprints to search for
+      Priority: 1
