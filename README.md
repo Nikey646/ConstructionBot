@@ -1,1 +1,1 @@
-# This entire repo is now useless, due to the fact that User Vas#1890 (Id: 163754959232303104, mention like <@!163754959232303104>) from the Factorio discord got me banned, so ConstructionBot no longer exists. #BlameVas
+# This entire repo is now useless, due to the fact that User [Vas#1890](https://github.com/VasVadum) (Id: 163754959232303104, mention like <@!163754959232303104>) from the Factorio discord got me banned, so ConstructionBot no longer exists. #BlameVas
