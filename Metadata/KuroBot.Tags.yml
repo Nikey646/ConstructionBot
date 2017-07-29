@@ -1,31 +1,51 @@
 KuroBot.Tags.TagsModule:
+  Name: Tags Module
   Group: tags
   Aliases:
   - tag
+  - faq
+  - faw
   Commands:
-    CreateTagAsync:
+    CreateAsync:
       Name: Create a Tag
       Command: create
-      Summary: Adds a new tag to the collection of tags
+      Summary: ' Adds a new tag to the collection of tags'
       Aliases:
       - add
       Context: Guild
       MinimumPermission: Moderator
       Arguments:
       - Summary: The name of the tag
+      Priority: 1
+    CreateWithImageAsync:
+      Name: Create a Tag
+      Command: create
+      Summary: ' Adds a new tag to the collection of tags'
+      Aliases:
+      - add
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The name of the tag
+      - Summary: The url to an image to be included with the tag
       - Summary: The contents of the tag. May only be empty if a screenshot is attached to the message
-      Priority: 2
-    DisplayTagAsync:
+      Priority: 1
+    ListAsync:
+      Name: List all Tags
+      Summary: Lists all available tags
+      Aliases:
+      - list
+      Context: Guild
+    DisplayAsync:
       Name: Display a Tag
-      Summary: Displays a tag
+      Summary: ' Displays a tag'
       Remarks: Bilkas 2nd favourite command (presumably)
       Aliases:
       - display
       Context: Guild
       Arguments:
       - Summary: The tag to display, you derpenstein
-      Priority: 1
-    ModifyTagAsync:
+    UpdateAttachmentAsync:
       Name: Edit a Tag
       Command: modify
       Summary: Modifies the contents of the tag
@@ -34,10 +54,42 @@ KuroBot.Tags.TagsModule:
       Context: Guild
       MinimumPermission: Moderator
       Arguments:
-      - Summary: The tag to modify
-      - Summary: The new contents of the tag. May only be empty if a screenshot is attached to the message
-      Priority: 2
-    RemoveTagAsync:
+      - Summary: The name of the tag
+    UpdateContentsAsync:
+      Name: Edit a Tag
+      Command: modify
+      Summary: Modifies the contents of the tag
+      Aliases:
+      - edit
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The name of the tag
+      - Summary: The new contents of the tag.
+    UpdateImageAsync:
+      Name: Edit a Tag
+      Command: modify
+      Summary: Modifies the contents of the tag
+      Aliases:
+      - edit
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The name of the tag
+      - Summary: The new url of the tag.
+    UpdateImageAndContentsAsync:
+      Name: Edit a Tag
+      Command: modify
+      Summary: Modifies the contents of the tag
+      Aliases:
+      - edit
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The name of the tag
+      - Summary: The new url of the tag.
+      - Summary: The new contents of the tag.
+    DeleteAsync:
       Name: Remove a Tag
       Command: delete
       Summary: Deletes a tag
@@ -47,19 +99,22 @@ KuroBot.Tags.TagsModule:
       Context: Guild
       MinimumPermission: Moderator
       Arguments:
-      - Summary: The name of the tag to delete
-      Priority: 2
-    DisplayStatsAsync:
-      Name: Display Tag Stats
-      Command: stats
-      Summary: Displays the Top 6 used tags and Bottom 6 used tags
-      Remarks: Bilkas favourite command~
-      Aliases:
-      - stat
+      - Summary: The name of the tag
+    RemoveAliasAsync:
+      Name: Remove an Alias
+      Command: alias remove
+      Summary: Removes an alias from a tag
+      Context: Guild
       MinimumPermission: Moderator
-      Priority: 2
-    DisplayAllTagsAsync:
-      Name: Display All Tags
-      Summary: Displays all available tags
-      Remarks: This rapes the database
-      Priority: 2
+      Arguments:
+      - Summary: The name of the tag
+      - Summary: The alias(es) to remove from the tag
+    AddAliasAsync:
+      Name: Add an Alias
+      Command: alias add
+      Summary: Adds an alias to a tag
+      Context: Guild
+      MinimumPermission: Moderator
+      Arguments:
+      - Summary: The name of the tag
+      - Summary: The alias(es) to add to the tag
