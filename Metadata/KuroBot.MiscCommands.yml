@@ -141,3 +141,6 @@ KuroBot.MiscCommands.FunModule:
       Summary: Displays a random inspiration image
     HeresyAsync:
       Command: heresy
+    PraiseZirr:
+      Name: Praise Zirr
+      Command: praisezirr

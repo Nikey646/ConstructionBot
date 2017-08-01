@@ -4,6 +4,7 @@ KuroBot.Tags.TagsModule:
   Aliases:
   - tag
   - faq
+  - faqs
   - faw
   Commands:
     CreateAsync:
